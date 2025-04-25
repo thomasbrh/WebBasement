@@ -61,9 +61,3 @@ titan.addEventListener('mousemove', () => {
         console.log('Audio non débloqué, interaction utilisateur requise');
     }
 });
-
-titan.addEventListener('mouseleave', () => {
-    console.log('Mouse left titan');
-    audioScream.pause(); // Met le son en pause si nécessaire
-    audioScream.currentTime = 0; // Réinitialise le son
-});
