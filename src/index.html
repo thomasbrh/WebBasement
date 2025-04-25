@@ -41,12 +41,13 @@
 
            </section>
 
-        <section>
-            <p class="paragraph">Zeus vivait grand. Les hommes le suppliaient, l’adoraient, car ils vivaient dans la terreur et l’obscurité. Ils priaient pour la pluie et pour la lumière. Les dieux étaient adulés, et tout se passait bien. C’est ainsi que s’écoulait le cours des choses.</p>
+        <section >
+            <img src="assets/images/colonne1.svg" alt="colonne" class="colonne">
+            <p class="paragraph-header">Zeus vivait grand. Les hommes le suppliaient, l’adoraient, car ils vivaient dans la terreur et l’obscurité. Ils priaient pour la pluie et pour la lumière. Les dieux étaient adulés, et tout se passait bien. C’est ainsi que s’écoulait le cours des choses.</p>
 
-            <p class="paragraph">Mais un jour, alors que Zeus s’éveillait dans les hauteurs de l’Olympe, prêt à brandir ses éclairs comme chaque matin — il en manquait.</p>
+            <p class="paragraph-header">Mais un jour, alors que Zeus s’éveillait dans les hauteurs de l’Olympe, prêt à brandir ses éclairs comme chaque matin — il en manquait.</p>
 
-            <p class="paragraph">Il tendit la main, et ne sentit que le vide. Un frisson le parcourut. Qui avait osé ? Qui avait pénétré dans son antre, souillé son domaine, et dérobé ce qu’il avait de plus sacré ? Ses éclairs. Son feu. Sa puissance même. Sa dignité.</p>
+            <p class="paragraph-header">Il tendit la main, et ne sentit que le vide. Un frisson le parcourut. Qui avait osé ? Qui avait pénétré dans son antre, souillé son domaine, et dérobé ce qu’il avait de plus sacré ? Ses éclairs. Son feu. Sa puissance même. Sa dignité.</p>
          </section>
         
          <section class="section-flamme grid">
@@ -281,6 +282,11 @@
         height: 100vh; 
         }
 
+        .section{
+            margin-top: 0px;
+            margin-bottom: 0px  ;
+        }
+
          .section-full {
             height: 100vh;
         }
@@ -425,13 +431,21 @@
             color: white;
             text-align: center;
             margin-top: 100px;
-            column 
         }
 
         .paragraph {
             font-size:  21px;
             margin-bottom: 20px;
             width: 75ch;
+        }
+
+        .paragraph-header{
+            gap: 0.5em;
+            margin-top: -180px;
+            margin-bottom: 200px;
+            margin-left: 400px;
+            margin-right: 4em;
+            font-size:  24px;
         }
 
         .yeux{
@@ -538,6 +552,10 @@
     border-top: 1px solid #555; /* Couleur de la ligne */
     margin: 20px auto;
     width: 80%; /* Largeur de la ligne */
+}
+
+    .colonne{
+
 }
 
 
