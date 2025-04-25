@@ -236,14 +236,14 @@
 
         </section>
 
-        <section>
-            <p class="paragraph">L’équilibre était rompu. Le feu avait tout changé.</p>
+        <section class=" grid">
+            <p class="paragraph grid-full">L’équilibre était rompu. Le feu avait tout changé. Et au sommet du mont Caucase, Zeus trouva le coupable. Prométhée. Le Titan rebelle, l’insolent, celui qui avait préféré les hommes aux dieux.</p>
 
-            <p class="paragraph">Et au sommet du mont Caucase, Zeus trouva le coupable. Prométhée. Le Titan rebelle, l’insolent, celui qui avait préféré les hommes aux dieux.</p>
+            <p class="paragraph grid-full">Alors Zeus le punit. Non par un simple éclair — cela aurait été trop doux. Non. Il l’enchaîna à une montagne, où chaque jour, un vautour viendrait lui dévorer le foie. Chaque nuit, il repousserait. Et l’agonie recommencerait.</p>
+        </section>
 
-            <p class="paragraph">Alors Zeus le punit. Non par un simple éclair — cela aurait été trop doux. Non. Il l’enchaîna à une montagne, où chaque jour, un vautour viendrait lui dévorer le foie. Chaque nuit, il repousserait. Et l’agonie recommencerait.</p>
-
-            <p class="paragraph">Car on ne vole pas les dieux. On ne joue pas avec l’ordre du monde. Et surtout… on ne rend pas le feu aux mortels.</p>
+        <section class="section-full">
+            <p class="center paragraph-flamme grid-start2 grid-end7">Car on ne vole pas les dieux. On ne joue pas avec l’ordre du monde. Et surtout… on ne rend pas le feu aux mortels.</p>
         </section>
 
         <section class="chatiment">
@@ -270,6 +270,20 @@
     </body>
 
     <style>
+       .section-flamme {
+            margin-bottom: 6em;
+        }
+
+        .center {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        }
+
+         .section-full {
+            height: 100vh;
+        }
 
         .grid {
             display: grid;
@@ -282,11 +296,28 @@
                 grid-column: 1 / -1;
             }
 
+            .grid-start1 {
+                grid-column-start: 1 ;
+            }
+
             .grid-start2 {
                 grid-column-start: 2 ;
             }
+
+            .grid-start-5 {
+                grid-column-start: 5 ;
+            }
+
+            .grid-end6 {
+                grid-column-end: 6 ;
+            }
+
             .grid-end7 {
                 grid-column-end: 7 ;
+            }
+
+            .grid-end8 {
+                grid-column-end: 8 ;
             }
 
         /* Flamme */
@@ -400,7 +431,7 @@
         .paragraph {
             font-size:  21px;
             margin-bottom: 20px;
-            margin-left: 50%;
+            width: 75ch;
         }
 
         .yeux{
