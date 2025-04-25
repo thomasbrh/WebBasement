@@ -27,4 +27,5 @@ h1, h2, h3, h4, h5, h6, p {
 .paragraph {
     @include paragrpah ($color-black);
     @include font-size-responsive(16px, 18px, 21px); /* 1.5 ratio */
+    color: white;
 }

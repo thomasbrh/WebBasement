@@ -59,10 +59,55 @@
 
             <div class="custom-cursor"></div>
             
-            <img src="../src/assets/images/yeux-zeus.png" alt="regard énervé de Zeus" class="yeux">
-            <img src="../src/assets/images/titan.png" alt="titan Prométhée qui subit son châtiment" class="yeux">
+            <img src="../assets/images/yeux-zeus.png" alt="regard énervé de Zeus" class="yeux">
+            <img src="../assets/images/titan.png" alt="titan Prométhée qui subit son châtiment" class="titan">
 
         </section>
         
     </body>
+
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'proxima-nova', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .paragraph {
+            margin-bottom: 20px;
+        }
+
+        .chatiment {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .yeux {
+            position: absolute;
+            width: 100%;
+            height: auto;
+        }
+
+        .titan {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: auto;
+        }
+
+        .custom-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background-color: red; /* Changez la couleur ici */
+            border-radius: 50%;
+            pointer-events: none; /* Ignore les événements de la souris */
+        }
+    </style>
 </html>
