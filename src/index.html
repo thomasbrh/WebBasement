@@ -66,6 +66,7 @@
         <section class="chatiment">
 
             <div class="custom-cursor"></div>
+            <audio id="scream" src="../assets/sound/scream.mp3" preload="auto"></audio>
             
             <img src="../assets/images/yeux-zeus.png" alt="regard énervé de Zeus" class="yeux">
             <img src="../assets/images/titan.png" alt="titan Prométhée qui subit son châtiment" class="titan">
@@ -75,6 +76,7 @@
     </body>
 
     <style>
+
         body {
             background-color: #000;
             color: #fff;
@@ -96,30 +98,44 @@
     
     
 
-        .paragraph {
-            margin-bottom: 20px;
-        }
-
-        .chatiment {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
         .yeux {
-            position: absolute;
             width: 100%;
-            height: auto;
         }
 
         .titan {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            width: 20%;
+        }
+
+        .nuage{
             width: 100%;
             height: auto;
+
+            
+          
+        }
+
+        .statue{
+            position: absolute;
+            left: 50%;
+            top: 100px;
+            z-index: -1;
+            width: 30%;
+
+        }
+
+
+        .eclair{
+            position: absolute;
+            left: 4%;
+            top: 160px;
+          
+        }
+
+        .eclair2{
+            position: absolute;
+            left: 85%;
+            top: 570px;
+          
         }
 
         .nuage{
@@ -155,12 +171,15 @@
         }
 
         .custom-cursor {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            background-color: red; /* Changez la couleur ici */
-            border-radius: 50%;
-            pointer-events: none; /* Ignore les événements de la souris */
+         position: absolute;
+         width: 300px;
+        height: 300px;
+         background: url('../assets/images/cursor.cur');
+        background-size: cover;
+         pointer-events: none;
+         visibility: hidden;
+         z-index: 1000;
         }
+
     </style>
 </html>
